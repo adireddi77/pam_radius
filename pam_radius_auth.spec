@@ -23,6 +23,8 @@ authentication.
 %setup -q -n pam_radius-%{version}
 
 %build
+make clean 
+./configure
 make
 
 %install
